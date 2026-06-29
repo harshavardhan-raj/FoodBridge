@@ -155,7 +155,7 @@ const LandingPage = () => {
                                             </div>
                                             <div className="flex items-center gap-3">
                                                 <span className="text-slate-400 text-xs">{item.dist}</span>
-                                                <button className="bg-green-600/20 hover:bg-green-600/40 text-green-400 text-xs font-bold px-3 py-1.5 rounded-lg transition-colors">Claim</button>
+                                                <button onClick={() => navigate('/login')} className="bg-green-600/20 hover:bg-green-600/40 text-green-400 text-xs font-bold px-3 py-1.5 rounded-lg transition-colors">Claim</button>
                                             </div>
                                         </div>
                                     ))}
