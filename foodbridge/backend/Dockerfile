@@ -1,19 +1,20 @@
-# Build stage
+# Stage 1: Build the React Frontend
+FROM node:18-alpine AS frontend-builder
+WORKDIR /web-frontend
+COPY foodbridge/web-frontend/package*.json ./
+RUN npm install
+COPY foodbridge/web-frontend/ ./
+RUN npm run build
+
+# Stage 2: Run the Backend Server
 FROM node:18-alpine
-
 WORKDIR /app
-
-# Copy package files
-COPY package*.json ./
-
-# Install dependencies
+COPY foodbridge/backend/package*.json ./
 RUN npm install --production
+COPY foodbridge/backend/ ./
 
-# Copy source code
-COPY . .
+# Copy the compiled frontend build from Stage 1
+COPY --from=frontend-builder /web-frontend/dist ./dist
 
-# Expose port
 EXPOSE 5000
-
-# Start command
 CMD ["node", "server.js"]

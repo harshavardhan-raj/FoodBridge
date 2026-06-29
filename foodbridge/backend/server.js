@@ -73,7 +73,11 @@ app.use('/api/discovery', discoveryRoutes);
 app.use('/api/predictions', predictionRoutes);
 
 // Serve static assets in production
-const distPath = path.join(__dirname, '../web-frontend/dist');
+const fs = require('fs');
+let distPath = path.join(__dirname, 'dist');
+if (!fs.existsSync(distPath)) {
+    distPath = path.join(__dirname, '../web-frontend/dist');
+}
 app.use(express.static(distPath));
 app.get('*', (req, res) => {
     // If request starts with /api, pass it to next (error handler) instead of serving index.html
