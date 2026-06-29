@@ -72,6 +72,17 @@ app.use('/api/stats', statRoutes);
 app.use('/api/discovery', discoveryRoutes);
 app.use('/api/predictions', predictionRoutes);
 
+// Serve static assets in production
+const distPath = path.join(__dirname, '../web-frontend/dist');
+app.use(express.static(distPath));
+app.get('*', (req, res) => {
+    // If request starts with /api, pass it to next (error handler) instead of serving index.html
+    if (req.path.startsWith('/api')) {
+        return res.status(404).json({ message: 'API route not found' });
+    }
+    res.sendFile(path.join(distPath, 'index.html'));
+});
+
 // Error Handling Middleware
 app.use((err, req, res, next) => {
     console.error(err.stack);
