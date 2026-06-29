@@ -1,0 +1,21 @@
+date,day_of_week,food_item,category,prepared_quantity,sold_quantity,surplus_quantity,expiry_hours_remaining,time_of_day,weather,event_flag,closing_time,restaurant_capacity_level
+2026-02-16,Monday,Idli,breakfast,100,92,8,4,08:30,Normal,normal,11:00,medium
+2026-02-16,Monday,Sambar Rice,lunch,150,110,40,6,13:30,Normal,normal,15:30,high
+2026-02-16,Monday,Chapati + Kurma,dinner,80,65,15,5,20:30,Rainy,normal,22:30,medium
+2026-02-17,Tuesday,Dosa,breakfast,120,115,5,3,09:00,Normal,normal,11:00,medium
+2026-02-17,Tuesday,Curd Rice,lunch,100,75,25,8,14:00,Normal,normal,15:30,medium
+2026-02-18,Wednesday,Pongal,breakfast,90,88,2,4,08:00,Normal,normal,10:30,medium
+2026-02-18,Wednesday,Lemon Rice,lunch,140,105,35,7,13:15,Rainy,normal,15:00,high
+2026-02-18,Wednesday,Uttapam,dinner,70,55,15,4,21:00,Normal,normal,22:30,medium
+2026-02-19,Thursday,Vada,breakfast,150,142,8,5,08:45,Normal,normal,11:00,high
+2026-02-19,Thursday,Bisibele Bath,lunch,110,80,30,6,13:30,Normal,normal,15:30,medium
+2026-02-20,Friday,Masala Dosa,breakfast,200,190,10,3,09:30,Normal,weekend_start,11:30,high
+2026-02-20,Friday,Sambar Rice,lunch,180,170,10,6,13:45,Normal,weekend_start,15:45,high
+2026-02-20,Friday,Chapati + Kurma,dinner,150,120,30,4,21:30,Normal,weekend_start,23:00,high
+2026-02-21,Saturday,Idli,breakfast,80,78,2,4,10:00,Normal,weekend,12:00,medium
+2026-02-21,Saturday,Masala Dosa,lunch,250,240,10,6,14:00,Normal,weekend,16:00,high
+2026-02-21,Saturday,Uttapam,dinner,120,100,20,5,21:00,Normal,weekend,23:00,high
+2026-02-22,Sunday,Pongal,breakfast,250,180,70,8,08:30,Normal,festival,11:30,high
+2026-02-22,Sunday,Bisibele Bath,lunch,300,220,80,7,13:30,Normal,festival,15:30,high
+2026-02-22,Sunday,Curd Rice,lunch,150,100,50,10,14:30,Normal,festival,16:00,high
+2026-02-22,Sunday,Chapati + Kurma,dinner,200,150,50,6,21:00,Normal,festival,23:00,high
