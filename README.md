@@ -1,20 +1,20 @@
-# 🍲 FoodBridge — Surplus Food Redistribution Platform
+#  FoodBridge — Surplus Food Redistribution Platform
 
 FoodBridge is a premium web application designed to combat food waste and address food insecurity. It bridges the gap between surplus food providers (like restaurants, bakeries, and grocery stores), local NGO charities, and students looking for discounted meals.
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
-* **📍 NGO Map & Discovery**: Real-time interactive mapping allowing local charities to locate available food listings nearby and reserve them instantly.
-* **🏷️ Student Marketplace**: A dedicated, discounted deal tracker where students can claim surplus food at major discounts.
-* **📦 Provider Inventory Management**: Intuitive provider dashboard where businesses can list food details, upload photos, set expiry windows, and track pickups.
-* **🔮 Predictive Surplus Matching**: Machine learning algorithms matching historical surplus data with user trends to predict future food surplus availability.
-* **🔔 Live Notifications**: Real-time status updates via WebSockets (Socket.io) informing users when listing statuses change or new food becomes available.
+* ** NGO Map & Discovery**: Real-time interactive mapping allowing local charities to locate available food listings nearby and reserve them instantly.
+* ** Student Marketplace**: A dedicated, discounted deal tracker where students can claim surplus food at major discounts.
+* ** Provider Inventory Management**: Intuitive provider dashboard where businesses can list food details, upload photos, set expiry windows, and track pickups.
+* ** Predictive Surplus Matching**: Machine learning algorithms matching historical surplus data with user trends to predict future food surplus availability.
+* ** Live Notifications**: Real-time status updates via WebSockets (Socket.io) informing users when listing statuses change or new food becomes available.
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 * **Frontend**: React (Vite), Tailwind CSS, HSL Custom Glassmorphism UI.
 * **Backend**: Node.js, Express.js.
@@ -24,7 +24,7 @@ FoodBridge is a premium web application designed to combat food waste and addres
 
 ---
 
-## 💻 Local Installation & Setup
+##  Local Installation & Setup
 
 ### Prerequisites
 * [Node.js](https://nodejs.org/) (v18+ recommended)
