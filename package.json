@@ -1,0 +1,11 @@
+{
+  "name": "foodbridge-monorepo",
+  "version": "1.0.0",
+  "description": "FoodBridge Surplus Food Redistribution Platform",
+  "main": "foodbridge/backend/server.js",
+  "scripts": {
+    "start": "node foodbridge/backend/server.js",
+    "build": "npm install --prefix foodbridge/backend && npm install --prefix foodbridge/web-frontend && npm run build --prefix foodbridge/web-frontend"
+  },
+  "dependencies": {}
+}
