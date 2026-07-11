@@ -48,11 +48,6 @@ io.on('connection', (socket) => {
     });
 });
 
-// Basic Route
-app.get('/', (req, res) => {
-    res.send('FoodBridge API is running...');
-});
-
 // Import Routes
 const authRoutes = require('./routes/auth');
 const listingRoutes = require('./routes/listings');
